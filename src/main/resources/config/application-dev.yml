@@ -1,0 +1,26 @@
+logging:
+  level:
+    ROOT: INFO
+    es.davidenjuan.subscriptions.internalapi: INFO
+
+spring:
+  jackson:
+    serialization:
+      indent-output: true
+  data:
+    mongodb:
+      uri: 
+      database: subscriptionsInternalApi
+      
+server:
+  port: 8081
+
+application:
+  jwt:
+    base64-secret: NDFhYzFkNGM5YjcwODlkMzhiZWI2NDY1MDYxNmVkYjZkZGY2YzA4ZTZiMjljNjk3MmQxNGJkMjkxODIzMGY3ZTM1MDRmMzVjYzY2MjQ4NDk5NTIyYmI4Zjc5YjIwMTc2YzAzNmNkYTI5MTFjOWM5ODcwZDgzMjA2ZmViNGVjNzk=
+    token-validity-seconds: 86400
+  email-api:
+    uri: http://localhost:8082/api/emails
+    user: system
+    password: cMq5VkWfWyfP27iHEECDdYst
+  front-end-uri: http://localhost:4200

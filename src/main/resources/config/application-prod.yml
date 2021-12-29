@@ -1,0 +1,12 @@
+logging:
+  level:
+    ROOT: INFO
+    es.davidenjuan.subscriptions.internalapi: INFO
+
+spring:
+  data:
+    mongodb:
+      database: subscriptionsInternalApi
+
+server:
+  port: 8080

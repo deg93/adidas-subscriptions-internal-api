@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: subscriptionsInternalApi
+  profiles:
+    active: dev
+  messages:
+    basename: i18n/messages
+    encoding: UTF-8
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always

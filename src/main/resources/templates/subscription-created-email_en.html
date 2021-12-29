@@ -1,0 +1,20 @@
+<div style="font-family: sans-serif;">
+    <p>
+        Hi
+        <span th:if="${subscription.firstName != null}" th:text="${subscription.firstName}"></span>
+        <span th:if="${subscription.firstName == null}" th:text="${subscription.email}"></span>!
+    </p>
+    
+    <p>
+        You have subscribed to the newsletter "<span th:text="${subscription.newsletterId}"></span>".
+    </p>
+    
+    <p>
+        Thank you!
+    </p>
+    
+    <p style="font-size: 10px">
+        To manage your active subscriptions, click <a th:href="${manageSubscriptionsFrontEndUri}">here</a>.
+        To cancel this subscription, click <a th:href="${cancelSubscriptionFrontEndUri}">here</a>.
+    </p>
+</div>
